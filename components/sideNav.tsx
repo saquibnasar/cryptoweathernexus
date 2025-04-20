@@ -7,6 +7,13 @@ interface SidebarLinkProps {
 }
 
 const SidebarLink = ({ to, icon, text }: SidebarLinkProps) => {
+  const buttons: ButtonType[] = [
+    { name: "Dashboard", link: "dashboard", icon: <RiDashboardLine /> },
+    { name: "Insights", link: "insights", icon: <RiLineChartLine /> },
+    { name: "Templates", link: "templates", icon: <RiArchive2Line /> },
+    { name: "Leads", link: "leads", icon: <RiNumbersLine /> },
+    { name: "Manage Cards", link: "manage-cards", icon: <RiBankCardLine /> },
+    { name: "Settings", link: "settings", icon: <RiSettings2Line /> },
   return (
     <Link
       href={to}
